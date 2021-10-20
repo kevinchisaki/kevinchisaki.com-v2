@@ -1,0 +1,163 @@
+/* ./src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "ATCArquette";
+        font-weight: 800;
+        src: url("../fonts/ATCArquette-Bold.woff") format("woff"),
+             url("../fonts/ATCArquette-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "ATCArquette";
+        font-weight: 600;
+        src: url("../fonts/ATCArquette-Semibold.woff") format("woff"),
+             url("../fonts/ATCArquette-Semibold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "ATCArquette";
+        font-weight: 500;
+        src: url("../fonts/ATCArquette-Medium.woff") format("woff"),
+             url("../fonts/ATCArquette-Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "ATCArquette";
+        font-weight: 400;
+        src: url("../fonts/ATCArquette-Regular.woff") format("woff"),
+             url("../fonts/ATCArquette-Regular.ttf") format("truetype");
+    }
+    body{
+        font-family: "ATCArquette";
+        color: #000A12;
+    }
+    h1 {
+        font-family: "ATCArquette";
+        @apply text-3xl;
+        font-weight: 600;
+        padding: 10 0 10 0;
+    }
+    h2 {
+        font-family: "ATCArquette";
+        @apply text-xl;
+        font-weight: 600;
+    }
+    h3 {
+        font-family: "ATCArquette";
+        @apply text-lg;
+        font-weight: 400;
+        color: #424242;
+    }
+    h4 {
+        font-family: "ATCArquette";
+        @apply text-lg uppercase;
+        font-weight: 500;
+    }
+    h5 {
+        font-family: "ATCArquette";
+        @apply text-base;
+        font-weight: 400;
+    }
+    h6 {
+        font-family: "ATCArquette";
+        @apply text-xl;
+        font-weight: 500;
+    }
+    p {
+        font-family: "ATCArquette";
+        @apply text-lg;
+        font-weight: 400;
+    }
+    a {
+        font-family: "ATCArquette";
+        font-weight: 500;
+    }
+    .link {
+        @apply hover:underline;
+    }
+    .container {
+        @apply lg:container mx-auto;
+    }
+    .intro {
+        @apply pt-20
+    }
+
+    /* NAVIGATION */
+
+    nav {
+        @apply py-8 flex flex-row justify-between;
+    }
+    .navLinks {
+        @apply flex flex-row;
+    }
+    .navLink {
+        @apply pl-8 uppercase no-underline hover:text-gray-900;
+        font-weight: 600;
+        color: #BDBDBD;
+    }
+    .portfolioString {
+        @apply mb-16;
+    }
+    .portfolioHero {
+        @apply rounded-lg mt-14 mb-6;
+    }
+    .portfolioLink {
+
+    }
+
+    /* Footer */
+
+    footer {
+        @apply mt-16;
+    }
+    .footer-links {
+        @apply border-t py-14 flex justify-between;
+    }
+    .socials {
+        @apply flex;
+    }
+    @variants even, {
+        .social-link {
+            @apply even:mx-6;
+        }
+    }
+
+    /* CASE STUDY COLORS */
+    .trov-color {
+        color: #0198FF;
+    }
+
+    .ditto-color {
+        color: #8583DD;
+    }
+    .ditto-emoji {
+        display: inline-block;
+        width: 25px;
+        height:25px;
+    }
+
+    /* CASE STUDY STYLES */
+
+    .studyHeader {
+        @apply mb-14 sm:px-4 min-w-min;
+    }
+    .studyInfo {
+        @apply py-14 flex justify-between sm:flex-col;
+    }
+    .info {
+        @apply flex flex-col;
+    }
+    .img-alpha {
+        @apply mt-14 mb-8;
+    }
+    .img-beta {
+        @apply mt-8 mb-8;
+    }
+    .cs-alpha {
+        @apply mt-14;
+    }
+    .cs-beta {
+        @apply mt-1;
+    }
+}
